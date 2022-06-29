@@ -3997,14 +3997,22 @@ void tampil(void){
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
   //////// Adit ////////
+  ////////adittt////////
+   //////// Adit ////////
+  ////////adittt////////
+   //////// Adit ////////
+  ////////adittt////////
+   //////// Adit ////////
+  ////////adittt////////
+ 
 
      //alas hotel
     glBegin(GL_QUADS);
-    glColor3f(0.2, 0.2, 0.2);
-    glVertex3d(-40, -24.5, -90);
-    glVertex3d(-40, -24.5, 370);
-    glVertex3d(180, -24.5, 370);
-    glVertex3d(180, -24.5, -90);
+    glColor3ub(42.0, 42.0, 42.0);
+    glVertex3d(-40, -25, -90);
+    glVertex3d(-40, -25, 370);
+    glVertex3d(180, -25, 370);
+    glVertex3d(180, -25, -90);
     glEnd();
     // tembok batas daerah hotel kiri
 
@@ -4012,8 +4020,8 @@ void tampil(void){
     glColor3ub(126, 143, 140);
     glVertex3d(-39, -25, 345);
     glVertex3d(-39, 30, 345);
-    glVertex3d(-39, 30, -65);
-    glVertex3d(-39, -25, -65);
+    glVertex3d(-39, 30, -90);
+    glVertex3d(-39, -25, -90);
     glEnd();
 
      glBegin(GL_QUADS); // line kuning
@@ -4026,10 +4034,10 @@ void tampil(void){
      // tembok belakang
     glBegin(GL_QUADS);
     glColor3ub(177, 188, 186);
-    glVertex3d(-40, -25, -65);
-    glVertex3d(-40, 30, -65);
-    glVertex3d(180, 30, -65);
-    glVertex3d(180, -25, -65);
+    glVertex3d(-40, -25, -90);
+    glVertex3d(-40, 30, -90);
+    glVertex3d(180, 30, -90);
+    glVertex3d(180, -25, -90);
     glEnd();
 
     glBegin(GL_QUADS);
@@ -4142,22 +4150,343 @@ void tampil(void){
     glVertex3d(113, -24, 370);
     glVertex3d(113, -24, 345);
     glEnd();
-
-    ///// Daniel ////////// Daniel ////////// Daniel ////////// Daniel ////////// Daniel ////////// Daniel ////////// Daniel /////
-    ///// Daniel ////////// Daniel ////////// Daniel ////////// Daniel ////////// Daniel ////////// Daniel ////////// Daniel /////
-    ///// Daniel ////////// Daniel ////////// Daniel ////////// Daniel ////////// Daniel ////////// Daniel ////////// Daniel /////
-    ///// Daniel ////////// Daniel ////////// Daniel ////////// Daniel ////////// Daniel ////////// Daniel ////////// Daniel /////
-    ///// Daniel ////////// Daniel ////////// Daniel ////////// Daniel ////////// Daniel ////////// Daniel ////////// Daniel /////
-    ///// Daniel ////////// Daniel ////////// Daniel ////////// Daniel ////////// Daniel ////////// Daniel ////////// Daniel /////
-    ///// Daniel ////////// Daniel ////////// Daniel ////////// Daniel ////////// Daniel ////////// Daniel ////////// Daniel /////
-    //alas hotel
-    glBegin(GL_QUADS);
-    glColor3f(1.0, 0.0, 0.0);
-    glVertex3d(0, -25, -65);
-    glVertex3d(0, -25, 300);
-    glVertex3d(150, -25, 300);
-    glVertex3d(150, -25, -65);
+    // atap lantai 1
+     glBegin(GL_QUADS);
+    glColor3f(0.75, 0.75, 0.75);
+    glVertex3d(25, 30, -45);
+    glVertex3d(130, 30, -45);
+    glVertex3d(130, 30, 230);
+    glVertex3d(25, 30, 230);
     glEnd();
+    ////// update adit ////
+    // kotak atas hotel 1
+    glBegin(GL_QUADS);// depan
+   glColor3ub(126, 143, 140);
+    glVertex3d(70, 320, 225);
+    glVertex3d(70, 330, 225);
+    glVertex3d(112, 330, 225);
+    glVertex3d(112, 320, 225);
+    glEnd();
+     glBegin(GL_QUADS);// belakang
+   glColor3ub(126, 143, 140);
+    glVertex3d(70, 320, 200);//rendah
+    glVertex3d(70, 330, 200);// tinggi
+    glVertex3d(112, 330, 200);//tinggi
+    glVertex3d(112, 320, 200);//rendah
+    glEnd();
+     glBegin(GL_QUADS);//kiri
+    glColor3ub(126, 143, 140);
+    glVertex3d(70, 320, 225);//rendah
+    glVertex3d(70, 330, 225);
+    glVertex3d(70, 330, 200);
+    glVertex3d(70, 320, 200);//rendah
+    glEnd();
+    glBegin(GL_QUADS);// kanan
+   glColor3ub(126, 143, 140);
+    glVertex3d(112, 320, 225);
+    glVertex3d(112, 330, 225);
+    glVertex3d(112, 330, 200);
+    glVertex3d(112, 320, 200);
+    glEnd();
+     glBegin(GL_QUADS);
+    glColor3ub(126, 143, 140);
+    glVertex3d(70, 330, 200);
+    glVertex3d(70, 330, 225);
+    glVertex3d(112, 330, 225);
+    glVertex3d(112, 330, 200);
+    glEnd();
+      // kotak atas hotel 2
+    glBegin(GL_QUADS);// depan
+   glColor3ub(126, 143, 140);
+    glVertex3d(70, 320, 150);
+    glVertex3d(70, 330, 150);
+    glVertex3d(112, 330, 150);
+    glVertex3d(112, 320, 150);
+    glEnd();
+     glBegin(GL_QUADS);// belakang
+   glColor3ub(126, 143, 140);
+    glVertex3d(70, 320, 100);//rendah
+    glVertex3d(70, 330, 100);// tinggi
+    glVertex3d(112, 330, 100);//tinggi
+    glVertex3d(112, 320, 100);//rendah
+    glEnd();
+     glBegin(GL_QUADS);//kiri
+    glColor3ub(126, 143, 140);
+    glVertex3d(70, 320, 150);//rendah
+    glVertex3d(70, 330, 150);
+    glVertex3d(70, 330, 100);
+    glVertex3d(70, 320, 100);//rendah
+    glEnd();
+    glBegin(GL_QUADS);// kanan
+   glColor3ub(126, 143, 140);
+    glVertex3d(112, 320, 150);
+    glVertex3d(112, 330, 150);
+    glVertex3d(112, 330, 100);
+    glVertex3d(112, 320, 100);
+    glEnd();
+     glBegin(GL_QUADS);
+    glColor3ub(126, 143, 140);
+    glVertex3d(70, 330, 100);
+    glVertex3d(70, 330, 150);
+    glVertex3d(112, 330, 150);
+    glVertex3d(112, 330, 100);
+    glEnd();
+
+    // isi dalam hotel
+
+      // tv lobby
+        glBegin(GL_QUADS);
+    glColor3ub(181, 177, 177);
+    glVertex3d(125, 0, 120);
+    glVertex3d(125, 20, 120);
+    glVertex3d(125, 20, 90);
+    glVertex3d(125, 0, 90);
+    glEnd();
+       glBegin(GL_QUADS);
+     glColor3ub(255, 250, 250);
+    glVertex3d(125, 20, 90);
+    glVertex3d(125, 20, 120);
+    glVertex3d(130, 20, 120);
+    glVertex3d(130, 20, 90);
+    glEnd();
+           glBegin(GL_QUADS);
+     glColor3ub(255, 250, 250);
+    glVertex3d(125, 0, 90);
+    glVertex3d(125, 0, 120);
+    glVertex3d(130, 0, 120);
+    glVertex3d(130, 0, 90);
+    glEnd();
+     glBegin(GL_QUADS);// depan
+   glColor3ub(255, 250, 250);
+    glVertex3d(125, 0, 120);
+    glVertex3d(125, 20, 120);
+    glVertex3d(130, 20, 120);
+    glVertex3d(130, 0, 120);
+    glEnd();
+     glBegin(GL_QUADS);// belakang
+   glColor3ub(255, 250, 250);
+    glVertex3d(125, 0, 90);
+    glVertex3d(125, 20, 90);
+    glVertex3d(130, 20, 90);
+    glVertex3d(130, 0, 90);
+    glEnd();
+
+
+     glBegin(GL_LINES);
+    glColor3ub(0, 0, 0);
+    glVertex3d(125, 0, 120);
+    glVertex3d(125, 20, 120);
+    glVertex3d(125, 20, 90);
+    glVertex3d(125, 0, 90);
+    glEnd();
+      glBegin(GL_LINES);
+    glColor3ub(0, 0, 0);
+    glVertex3d(125, 20, 90);
+    glVertex3d(125, 20, 120);
+    glVertex3d(129, 20, 120);
+    glVertex3d(129, 20, 90);
+    glEnd();
+          glBegin(GL_LINES);
+    glColor3ub(0, 0, 0);
+    glVertex3d(125, 0, 90);
+    glVertex3d(125, 0, 120);
+    glVertex3d(129, 0, 120);
+    glVertex3d(129, 0, 90);
+    glEnd();
+     glBegin(GL_LINES);
+    glColor3ub(0, 0, 0);
+    glVertex3d(125, 0, 120);
+    glVertex3d(125, 20, 120);
+    glVertex3d(129, 20, 120);
+    glVertex3d(129, 0, 120);
+    glEnd();
+    glBegin(GL_LINES);
+    glColor3ub(0, 0, 0);
+    glVertex3d(125, 0, 90);
+    glVertex3d(125, 20, 90);
+    glVertex3d(129, 20, 90);
+    glVertex3d(129, 0, 90);
+    glEnd();
+       //atap hotel
+
+    glBegin(GL_QUADS);
+    glColor3f(0.75, 0.75, 0.75);
+    glVertex3d(25, 30, -45);
+    glVertex3d(130, 30, -45);
+    glVertex3d(130, 30, 230);
+    glVertex3d(25, 30, 230);
+    glEnd();
+
+    // meja 1
+        glBegin(GL_QUADS);
+    glColor3ub(92, 55, 20);
+    glVertex3d(70, -10, 90);
+    glVertex3d(70, -10, 120);
+    glVertex3d(90, -10, 120);
+    glVertex3d(90, -10, 90);
+    glEnd();
+     glBegin(GL_QUADS);// depan
+   glColor3ub(117, 113, 109);
+    glVertex3d(78, -20, 107);
+    glVertex3d(78, -10, 107);
+    glVertex3d(82, -10, 107);
+    glVertex3d(82, -20, 107);
+    glEnd();
+     glBegin(GL_QUADS);// belakang
+   glColor3ub(117, 113, 109);
+    glVertex3d(78, -20, 103);
+    glVertex3d(78, -10, 103);
+    glVertex3d(82, -10, 103);
+    glVertex3d(82,-20, 103);
+    glEnd();
+    // meja 2
+        glBegin(GL_QUADS);
+    glColor3ub(92, 55, 20);
+    glVertex3d(70, -10, 170);
+    glVertex3d(70, -10, 200);
+    glVertex3d(90, -10, 200);
+    glVertex3d(90, -10, 170);
+    glEnd();
+     glBegin(GL_QUADS);// depan
+   glColor3ub(117, 113, 109);
+    glVertex3d(78, -20, 187);
+    glVertex3d(78, -10, 187);
+    glVertex3d(82, -10, 187);
+    glVertex3d(82, -20, 187);
+    glEnd();
+     glBegin(GL_QUADS);// belakang
+   glColor3ub(117, 113, 109);
+    glVertex3d(78, -20, 183);
+    glVertex3d(78, -10, 183);
+    glVertex3d(82, -10, 183);
+    glVertex3d(82, -20, 183);
+    glEnd();
+
+
+    // batang lampu atas 1
+    glBegin(GL_QUADS);// depan
+   glColor3ub(117, 113, 109);
+    glVertex3d(78, 20, 107);
+    glVertex3d(78, 30, 107);
+    glVertex3d(79, 30, 107);
+    glVertex3d(79, 20, 107);
+    glEnd();
+     glBegin(GL_QUADS);// belakang
+   glColor3ub(117, 113, 109);
+    glVertex3d(78, 20, 106);
+    glVertex3d(78, 30, 106);
+    glVertex3d(79, 30, 106);
+    glVertex3d(79, 20, 106);
+    glEnd();
+      glBegin(GL_QUADS);// kiri
+    glColor3ub(117, 113, 109);
+    glVertex3d(78, 20, 107);
+    glVertex3d(78, 30, 107);
+    glVertex3d(78, 30, 106);
+    glVertex3d(78,20, 106);
+    glEnd();
+    glBegin(GL_QUADS);// kiri
+    glColor3ub(117, 113, 109);
+    glVertex3d(79, 20, 107);
+    glVertex3d(79, 30, 107);
+    glVertex3d(79, 30, 106);
+    glVertex3d(79,20, 106);
+    glEnd();
+    //lampu
+     glBegin(GL_QUADS);// depan
+   glColor3ub(204, 200, 196);
+    glVertex3d(77, 18, 108);
+    glVertex3d(77, 20, 108);
+    glVertex3d(80, 20, 108);
+    glVertex3d(80, 18, 108);
+    glEnd();
+     glBegin(GL_QUADS);// belakang
+   glColor3ub(204, 200, 196);
+    glVertex3d(77, 18, 105);
+    glVertex3d(77, 20, 105);
+    glVertex3d(80, 20, 105);
+    glVertex3d(80, 18, 105);
+    glEnd();
+      glBegin(GL_QUADS);// kiri
+    glColor3ub(204, 200, 196);
+    glVertex3d(77, 18, 108);
+    glVertex3d(77, 20, 108);
+    glVertex3d(77, 20, 105);
+    glVertex3d(77,18, 105);
+    glEnd();
+    glBegin(GL_QUADS);// kiri
+    glColor3ub(204, 200, 196);
+    glVertex3d(80, 18, 108);
+    glVertex3d(80, 20, 108);
+    glVertex3d(80, 20, 105);
+    glVertex3d(80,18, 105);
+    glEnd();
+      // batang lampu atas 2
+    glBegin(GL_QUADS);// depan
+   glColor3ub(117, 113, 109);
+    glVertex3d(78, 20, 185);
+    glVertex3d(78, 30, 185);
+    glVertex3d(79, 30, 185);
+    glVertex3d(79, 20, 185);
+    glEnd();
+     glBegin(GL_QUADS);// belakang
+   glColor3ub(117, 113, 109);
+    glVertex3d(78, 20, 186);
+    glVertex3d(78, 30, 186);
+    glVertex3d(79, 30, 186);
+    glVertex3d(79, 20, 186);
+    glEnd();
+      glBegin(GL_QUADS);// kiri
+    glColor3ub(117, 113, 109);
+    glVertex3d(78, 20, 185);
+    glVertex3d(78, 30, 185);
+    glVertex3d(78, 30, 186);
+    glVertex3d(78,20, 186);
+    glEnd();
+    glBegin(GL_QUADS);// kiri
+    glColor3ub(117, 113, 109);
+    glVertex3d(79, 20, 185);
+    glVertex3d(79, 30, 185);
+    glVertex3d(79, 30, 186);
+    glVertex3d(79,20, 186);
+    glEnd();
+    //lampu
+     glBegin(GL_QUADS);// depan
+   glColor3ub(204, 200, 196);
+    glVertex3d(77, 18, 188);
+    glVertex3d(77, 20, 188);
+    glVertex3d(80, 20, 188);
+    glVertex3d(80, 18, 188);
+    glEnd();
+     glBegin(GL_QUADS);// belakang
+   glColor3ub(204, 200, 196);
+    glVertex3d(77, 18, 185);
+    glVertex3d(77, 20, 185);
+    glVertex3d(80, 20, 185);
+    glVertex3d(80, 18, 185);
+    glEnd();
+      glBegin(GL_QUADS);// kiri
+    glColor3ub(204, 200, 196);
+    glVertex3d(77, 18, 188);
+    glVertex3d(77, 20, 188);
+    glVertex3d(77, 20, 185);
+    glVertex3d(77,18, 185);
+    glEnd();
+    glBegin(GL_QUADS);// kiri
+    glColor3ub(204, 200, 196);
+    glVertex3d(80, 18, 188);
+    glVertex3d(80, 20, 188);
+    glVertex3d(80, 20, 185);
+    glVertex3d(80,18, 185);
+    glEnd();
+    ///// Daniel ////////// Daniel ////////// Daniel ////////// Daniel ////////// Daniel ////////// Daniel ////////// Daniel /////
+    ///// Daniel ////////// Daniel ////////// Daniel ////////// Daniel ////////// Daniel ////////// Daniel ////////// Daniel /////
+    ///// Daniel ////////// Daniel ////////// Daniel ////////// Daniel ////////// Daniel ////////// Daniel ////////// Daniel /////
+    ///// Daniel ////////// Daniel ////////// Daniel ////////// Daniel ////////// Daniel ////////// Daniel ////////// Daniel /////
+    ///// Daniel ////////// Daniel ////////// Daniel ////////// Daniel ////////// Daniel ////////// Daniel ////////// Daniel /////
+    ///// Daniel ////////// Daniel ////////// Daniel ////////// Daniel ////////// Daniel ////////// Daniel ////////// Daniel /////
+    ///// Daniel ////////// Daniel ////////// Daniel ////////// Daniel ////////// Daniel ////////// Daniel ////////// Daniel /////
+
 
     // tembok depan
     glBegin(GL_QUADS);
@@ -7110,16 +7439,16 @@ void keyboard(unsigned char key, int x, int y) {
         case 'W' :
         glTranslatef(0.0, 0.0, 3.0);
         break;
-        case 'd' :
-        case 'D' :
+        case 'a' :
+        case 'A' :
         glTranslatef(3.0, 0.0, 00);
         break;
         case 's' :
         case 'S' :
         glTranslatef(0.0, 0.0, -3.0);
         break;
-        case 'a' :
-        case 'A' :
+        case 'd' :
+        case 'D' :
         glTranslatef(-3.0, 0.0, 0.0);
         break;
         case 'q' :
